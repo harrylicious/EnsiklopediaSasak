@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".IntroAppActivity">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        />
+
+    <TextView
+        android:id="@+id/slide_title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENSIKLOPEDIA SASAK"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/img1"
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+        android:id="@+id/slide_desc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="( Belajar Sasak dengan Mudah )"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_below="@id/slide_title1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        />
+
+</RelativeLayout>

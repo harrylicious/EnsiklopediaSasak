@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_kamus"
+            android:icon="@drawable/ic_kamus"
+            android:title="Kamus" />
+        <item
+            android:id="@+id/nav_percakapan"
+            android:icon="@drawable/ic_chat"
+            android:title="Percakapan" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_music_video"
+            android:title="Video" />
+        <item
+            android:id="@+id/nav_naskah"
+            android:icon="@drawable/ic_naskah"
+            android:title="Naskah" />
+        <item
+        android:id="@+id/nav_list"
+        android:icon="@drawable/ic_list"
+        android:title="Daftar Kata" />
+        <item
+            android:id="@+id/nav_develop"
+            android:icon="@drawable/ic_developer"
+            android:title="Pengembangan" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info"
+            android:title="Tentang" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Bagikan" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="AboutFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:padding="30dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:id="@+id/dialog_separator1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_above="@id/dialog_msg_deskrib"
+                android:layout_marginLeft="@dimen/margin_msg_body"
+                android:layout_marginRight="@dimen/margin_msg_body"
+                android:background="@color/lightgray" />
+
+
+            <TextView
+                android:id="@+id/dialog_msg_deskrib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/dialog_txt"
+                android:layout_marginLeft="@dimen/margin_msg_body"
+                android:layout_marginRight="@dimen/margin_msg_body"
+                android:fontFamily="@font/roboto_light"
+                android:text="Masukkan kritik dan saran anda pada kotak dibawah ini, masukkan anda sangat bermanfaat bagi produk kami kedepannya."
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/dialog_txt"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                app:mtf_labelColor="#666"
+                app:mtf_image="@drawable/ic_info"
+                >
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/dialog_txt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:hint="Pesan"
+                    android:textColor="#333"
+                    android:textSize="15sp" />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <Button
+                android:id="@+id/dialog_btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/dialog_txt"
+                android:layout_marginLeft="@dimen/margin_msg_body"
+                android:layout_marginRight="@dimen/margin_msg_body"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/button_rounded_send"
+                android:elevation="@dimen/elevation_view"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingRight="@dimen/padding_btn"
+                android:paddingStart="@dimen/padding_btn"
+                android:text="KIRIM"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
